@@ -21,9 +21,9 @@ const schematic2schem = async (
       value: {
         Version: { type: TagType.Int, value: 2 },
         DataVersion: { type: TagType.Int, value: 2586 }, // 2568 = version 1.16.5
-        Width: { type: TagType.Int, value: dimensions.width },
-        Height: { type: TagType.Int, value: dimensions.height },
-        Length: { type: TagType.Int, value: dimensions.length },
+        Width: { type: TagType.Short, value: dimensions.width },
+        Height: { type: TagType.Short, value: dimensions.height },
+        Length: { type: TagType.Short, value: dimensions.length },
         Palette: paletteTag,
         BlockData: {
           type: TagType.ByteArray,
